@@ -1,0 +1,56 @@
+.quote-generator {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quote-generator__form {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.quote-generator__input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.quote-generator__button {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quote-generator__button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.quote-generator__quote {
+  margin-top: 1.5rem;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quote-generator__error {
+  margin-top: 1.5rem;
+  color: red;
+  font-size: 16px;
+}
+
+.quote-generator__error::before {
+  content: 'Error: ';
+  font-weight: bold;
+}
