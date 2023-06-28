@@ -15,7 +15,7 @@ const QuoteGenerator = () => {
     setError('');
 
     try {
-      const response = await axios.get(`http://localhost:8000/quote?keyword=${keyword}`);
+      const response = await axios.get(`https://quote-server-u09z.onrender.com/quote?keyword=${keyword}`);
       console.log(response);
       setQuote(response.data);
     } catch (error) {
